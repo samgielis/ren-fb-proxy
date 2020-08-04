@@ -1,0 +1,25 @@
+{
+  "name": "ren-fb-proxy",
+  "version": "1.0.0",
+  "description": "A repository for lambdas that proxy Facebook's API and query the Ren Sport FB page.",
+  "author": "Sam Gielis <samgielis@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samgielis/ren-fb-proxy.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samgielis/ren-fb-proxy/issues"
+  },
+  "homepage": "https://github.com/samgielis/ren-fb-proxy#readme",
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.59",
+    "@types/node": "^14.0.27",
+    "axios": "^0.19.2",
+    "netlify-lambda": "^2.0.1"
+  }
+}
