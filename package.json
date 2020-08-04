@@ -5,6 +5,7 @@
   "author": "Sam Gielis <samgielis@gmail.com>",
   "main": "index.js",
   "scripts": {
+    "build": "netlify-lambda build api/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
