@@ -13,18 +13,22 @@ export async function handler(event) {
     };
   }
 
-  const response = await axios({
-    method: "get",
-    url: url,
-  });
-
-  response.data;
-  return {
-    statusCode: response.status,
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Content-Type": "application/json",
-    },
-    body: response.data,
-  };
+  try {
+    const response = await axios({
+      method: "get",
+      url: url,
+    });
+    return {
+      statusCode: response.status,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(response.data),
+    };
+  } catch (e) {
+    return {
+      statusCode: 500,
+    };
+  }
 }
