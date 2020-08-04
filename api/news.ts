@@ -24,6 +24,10 @@ export async function handler(
   response.data;
   return {
     statusCode: response.status,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "application/json",
+    },
     body: response.data,
   };
 }
