@@ -11,6 +11,7 @@ export async function handler(event) {
     "message",
     "permalink_url",
     "from",
+    "created_time"
   ];
   fields = fields.join("%2C");
   const url = `https://graph.facebook.com/v7.0/${PAGE_ID}/posts?fields=${fields}&access_token=${PAGE_API_KEY}`;
